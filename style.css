@@ -1,0 +1,143 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: 300;
+    background-color: #eaeaea;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.app {
+    max-width: 960px;
+    width: 100%;
+}
+
+    .app__header {
+        text-align: center;
+        font-weight: 500;
+        color: black;
+    }
+
+.list_heading {
+	width: 550px;
+	background-color: #286aa8;
+	color: white;
+	height: 40px;
+	margin: 20px auto 0;
+	line-height: 40px;
+	position: relative;
+}
+
+.fa-tasks {
+	 margin: auto 10px;
+	 color: #163d61;
+}
+
+span {
+	white-space: nowrap;
+    overflow: hidden;
+}
+
+span.name_list_heading + i + i {
+	 margin: auto 10px;
+	 color: #d4e9fc;
+	 position: absolute;
+     right: 0;
+	 bottom: 14px;
+	 visibility: hidden;
+	 white-space: nowrap;
+     overflow: hidden;
+}
+
+span.name_list_heading + i {
+	 margin: auto 10px;
+	 color: #d4e9fc;
+	 position: absolute;
+     right: 25px;
+	 bottom: 14px;
+	 visibility: hidden;
+	 white-space: nowrap;
+     overflow: hidden;
+}
+
+div.list_heading:hover span.name_list_heading ~ i {
+	visibility: visible;
+}
+
+.task_adding {
+	width: 550px;
+	background-color: #cccecf;
+	color: white;
+	height: 40px;
+	margin: 0 auto 0;
+	line-height: 40px;
+	position: relative;
+}
+
+.fa-plus {
+	 margin: auto 10px;
+	 color: #0d7a01;
+}
+
+input.editor_task_name {
+	height: 28px;
+}
+
+button.task_adding_button {
+	height: 27px;
+	width: 90px;
+	background: #0d7a01;
+	color: white;
+	border-width: 0px;
+	border-radius: 0 5px 5px 0;
+	 position: absolute;
+	 white-space: nowrap;
+     overflow: hidden;
+	 bottom: 6.5px;
+}
+
+div.task_table {
+	width: 550px;
+	margin: 0 auto 0;
+	background: white;
+}
+
+td {
+	height: 40px;
+}
+
+td.td_checkbox {
+	width: 6%;
+}
+
+td.td_buttons_group {
+	width: 20%;
+}
+
+td.td_text {
+	color: #636363;
+}
+
+td.td_buttons_group  i {
+	color: #a1a1a1;
+	visibility: hidden;
+	margin: 3px;
+}
+
+tr:hover {
+	background: #fffdc9;
+}
+
+tr:hover td.td_buttons_group  i {
+	visibility: visible;
+}
